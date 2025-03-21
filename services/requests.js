@@ -35,7 +35,7 @@ const getSingleActivity = (req, res) => {
 }
 
 const addActivityToDB = (req, res) => {
-  const activity = [ req.body.activity ] || "no data";
+  const activity = "no data";
 
   const addString = 'INSERT INTO "my_activities" (activity) VALUES ($1) RETURNING *'; // insert value into my_activities' table
 
